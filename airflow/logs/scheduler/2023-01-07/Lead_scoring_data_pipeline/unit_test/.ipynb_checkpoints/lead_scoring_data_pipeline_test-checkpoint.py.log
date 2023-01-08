@@ -1,0 +1,108 @@
+[2023-01-07 18:03:26,092] {processor.py:153} INFO - Started process (PID=3281) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:03:26,093] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:03:26,093] {logging_mixin.py:115} INFO - [2023-01-07 18:03:26,093] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:03:26,319] {logging_mixin.py:115} INFO - [2023-01-07 18:03:26,319] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:03:26,319] {logging_mixin.py:115} INFO - [2023-01-07 18:03:26,319] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:03:26,465] {logging_mixin.py:115} INFO - [2023-01-07 18:03:26,464] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from mapping.city_tier_mapping import city_tier_mapping
+ModuleNotFoundError: No module named 'mapping'
+[2023-01-07 18:03:26,465] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:03:26,489] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.403 seconds
+[2023-01-07 18:04:06,611] {processor.py:153} INFO - Started process (PID=3394) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:06,612] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:04:06,612] {logging_mixin.py:115} INFO - [2023-01-07 18:04:06,612] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:06,805] {logging_mixin.py:115} INFO - [2023-01-07 18:04:06,805] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:04:06,805] {logging_mixin.py:115} INFO - [2023-01-07 18:04:06,805] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:04:06,950] {logging_mixin.py:115} INFO - [2023-01-07 18:04:06,948] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from city_tier_mapping import city_tier_mapping
+ModuleNotFoundError: No module named 'city_tier_mapping'
+[2023-01-07 18:04:06,950] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:06,963] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.359 seconds
+[2023-01-07 18:04:40,927] {processor.py:153} INFO - Started process (PID=3483) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:40,929] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:04:40,929] {logging_mixin.py:115} INFO - [2023-01-07 18:04:40,929] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:41,123] {logging_mixin.py:115} INFO - [2023-01-07 18:04:41,122] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:04:41,123] {logging_mixin.py:115} INFO - [2023-01-07 18:04:41,123] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:04:41,268] {logging_mixin.py:115} INFO - [2023-01-07 18:04:41,267] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from city_tier_mapping import city_tier_mapping
+ModuleNotFoundError: No module named 'city_tier_mapping'
+[2023-01-07 18:04:41,268] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:04:41,281] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.361 seconds
+[2023-01-07 18:05:20,225] {processor.py:153} INFO - Started process (PID=3546) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:20,226] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:05:20,226] {logging_mixin.py:115} INFO - [2023-01-07 18:05:20,226] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:20,423] {logging_mixin.py:115} INFO - [2023-01-07 18:05:20,422] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:05:20,423] {logging_mixin.py:115} INFO - [2023-01-07 18:05:20,423] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:05:20,572] {logging_mixin.py:115} INFO - [2023-01-07 18:05:20,570] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from city_tier_mapping import city_tier_mapping
+ModuleNotFoundError: No module named 'city_tier_mapping'
+[2023-01-07 18:05:20,572] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:20,587] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.367 seconds
+[2023-01-07 18:05:55,676] {processor.py:153} INFO - Started process (PID=3627) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:55,677] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:05:55,677] {logging_mixin.py:115} INFO - [2023-01-07 18:05:55,677] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:55,873] {logging_mixin.py:115} INFO - [2023-01-07 18:05:55,873] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:05:55,873] {logging_mixin.py:115} INFO - [2023-01-07 18:05:55,873] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:05:56,021] {logging_mixin.py:115} INFO - [2023-01-07 18:05:56,020] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from city_tier_mapping import *
+ModuleNotFoundError: No module named 'city_tier_mapping'
+[2023-01-07 18:05:56,022] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:05:56,035] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.367 seconds
+[2023-01-07 18:06:36,932] {processor.py:153} INFO - Started process (PID=3699) to work on /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:06:36,934] {processor.py:641} INFO - Processing file /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py for tasks to queue
+[2023-01-07 18:06:36,934] {logging_mixin.py:115} INFO - [2023-01-07 18:06:36,934] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:06:37,127] {logging_mixin.py:115} INFO - [2023-01-07 18:06:37,127] {utils.py:145} INFO - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-01-07 18:06:37,127] {logging_mixin.py:115} INFO - [2023-01-07 18:06:37,127] {utils.py:157} INFO - NumExpr defaulting to 8 threads.
+[2023-01-07 18:06:37,273] {logging_mixin.py:115} INFO - [2023-01-07 18:06:37,272] {dagbag.py:321} ERROR - Failed to import: /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py", line 10, in <module>
+    from Lead_scoring_data_pipeline.unit_test.utils import *
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py", line 10, in <module>
+    from city_tier_mapping import *
+ModuleNotFoundError: No module named 'city_tier_mapping'
+[2023-01-07 18:06:37,273] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py
+[2023-01-07 18:06:37,287] {processor.py:161} INFO - Processing /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py took 0.360 seconds

@@ -1,0 +1,47 @@
+[2023-01-08 11:07:12,512] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_categorical_vars_test manual__2023-01-08T11:07:06.190968+00:00 [queued]>
+[2023-01-08 11:07:12,517] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_categorical_vars_test manual__2023-01-08T11:07:06.190968+00:00 [queued]>
+[2023-01-08 11:07:12,517] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 11:07:12,517] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-01-08 11:07:12,517] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 11:07:12,528] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): mapping_categorical_vars_test> on 2023-01-08 11:07:06.190968+00:00
+[2023-01-08 11:07:12,531] {standard_task_runner.py:52} INFO - Started process 19629 to run task
+[2023-01-08 11:07:12,536] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline_test', 'mapping_categorical_vars_test', 'manual__2023-01-08T11:07:06.190968+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py', '--cfg-path', '/tmp/tmp43mg8b3j', '--error-file', '/tmp/tmpe279n797']
+[2023-01-08 11:07:12,537] {standard_task_runner.py:80} INFO - Job 99: Subtask mapping_categorical_vars_test
+[2023-01-08 11:07:12,572] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_categorical_vars_test manual__2023-01-08T11:07:06.190968+00:00 [running]> on host 1f037b111ba5
+[2023-01-08 11:07:12,607] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline_test
+AIRFLOW_CTX_TASK_ID=mapping_categorical_vars_test
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-08T11:07:06.190968+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-08T11:07:06.190968+00:00
+[2023-01-08 11:07:12,620] {logging_mixin.py:115} WARNING - /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py:200 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-01-08 11:07:12,624] {logging_mixin.py:115} WARNING - /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py:209 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-01-08 11:07:12,627] {logging_mixin.py:115} WARNING - /home/airflow/dags/Lead_scoring_data_pipeline/unit_test/utils.py:218 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-01-08 11:07:12,661] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/test_with_pytest.py", line 83, in test_map_categorical_vars
+    assert df.equals(df_test)
+AssertionError
+[2023-01-08 11:07:12,663] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_Scoring_Data_Engineering_Pipeline_test, task_id=mapping_categorical_vars_test, execution_date=20230108T110706, start_date=20230108T110712, end_date=20230108T110712
+[2023-01-08 11:07:12,676] {standard_task_runner.py:92} ERROR - Failed to execute job 99 for task mapping_categorical_vars_test (; 19629)
+[2023-01-08 11:07:12,705] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-01-08 11:07:12,725] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

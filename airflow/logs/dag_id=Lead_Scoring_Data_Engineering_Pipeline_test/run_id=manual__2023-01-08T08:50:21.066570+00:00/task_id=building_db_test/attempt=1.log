@@ -1,0 +1,32 @@
+[2023-01-08 08:50:24,144] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:50:21.066570+00:00 [queued]>
+[2023-01-08 08:50:24,149] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:50:21.066570+00:00 [queued]>
+[2023-01-08 08:50:24,149] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:50:24,149] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-01-08 08:50:24,149] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:50:24,161] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): building_db_test> on 2023-01-08 08:50:21.066570+00:00
+[2023-01-08 08:50:24,165] {standard_task_runner.py:52} INFO - Started process 3459 to run task
+[2023-01-08 08:50:24,171] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline_test', 'building_db_test', 'manual__2023-01-08T08:50:21.066570+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py', '--cfg-path', '/tmp/tmp4_f8in5e', '--error-file', '/tmp/tmprqs2wvzl']
+[2023-01-08 08:50:24,172] {standard_task_runner.py:80} INFO - Job 41: Subtask building_db_test
+[2023-01-08 08:50:24,207] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:50:21.066570+00:00 [running]> on host 1f037b111ba5
+[2023-01-08 08:50:24,247] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline_test
+AIRFLOW_CTX_TASK_ID=building_db_test
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-08T08:50:21.066570+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-08T08:50:21.066570+00:00
+[2023-01-08 08:50:24,604] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/test_with_pytest.py", line 28, in test_load_data_into_db
+    assert df_score.shape[0] == df_score_test.shape[0]
+AssertionError
+[2023-01-08 08:50:24,607] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_Scoring_Data_Engineering_Pipeline_test, task_id=building_db_test, execution_date=20230108T085021, start_date=20230108T085024, end_date=20230108T085024
+[2023-01-08 08:50:24,617] {standard_task_runner.py:92} ERROR - Failed to execute job 41 for task building_db_test (; 3459)
+[2023-01-08 08:50:24,661] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-01-08 08:50:24,688] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

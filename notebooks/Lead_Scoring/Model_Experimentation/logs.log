@@ -1,0 +1,129 @@
+2023-01-08 11:52:30,576:INFO:PyCaret Supervised Module
+2023-01-08 11:52:30,576:INFO:ML Usecase: classification
+2023-01-08 11:52:30,576:INFO:version 2.3.8
+2023-01-08 11:52:30,577:INFO:Initializing setup()
+2023-01-08 11:52:30,577:INFO:setup(target=app_complete_flag, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.95, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=True, fold_groups=None, n_jobs=-1, use_gpu=True, custom_pipeline=None, html=True, session_id=42, log_experiment=True, experiment_name=Lead_scoring_model_experimentation, experiment_custom_tags=None, log_plots=['auc', 'confusion_matrix', 'feature'], log_profile=False, log_data=True, silent=True, verbose=True, profile=False, profile_kwargs=None, display=None)
+2023-01-08 11:52:30,577:INFO:Checking environment
+2023-01-08 11:52:30,577:INFO:python_version: 3.8.12
+2023-01-08 11:52:30,577:INFO:python_build: ('default', 'Oct 12 2021 21:59:51')
+2023-01-08 11:52:30,577:INFO:machine: x86_64
+2023-01-08 11:52:30,577:INFO:platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.10
+2023-01-08 11:52:30,578:INFO:Memory: svmem(total=270103662592, available=204335177728, percent=24.3, used=63959609344, free=61287374848, active=88106901504, inactive=94186270720, buffers=1301549056, cached=143555129344, shared=41099264, slab=11235250176)
+2023-01-08 11:52:30,581:INFO:Physical Core: 32
+2023-01-08 11:52:30,581:INFO:Logical Core: 64
+2023-01-08 11:52:30,581:INFO:Checking libraries
+2023-01-08 11:52:30,582:INFO:pd==1.4.3
+2023-01-08 11:52:30,582:INFO:numpy==1.22.2
+2023-01-08 11:52:30,582:INFO:sklearn==0.23.2
+2023-01-08 11:52:30,582:INFO:lightgbm==3.3.2
+2023-01-08 11:52:30,582:WARNING:catboost not found
+2023-01-08 11:52:30,654:INFO:xgboost==1.5.0
+2023-01-08 11:52:30,655:INFO:mlflow==1.26.1
+2023-01-08 11:52:30,655:INFO:Checking Exceptions
+2023-01-08 11:52:30,655:INFO:Declaring global variables
+2023-01-08 11:52:30,655:INFO:USI: ff4f
+2023-01-08 11:52:30,655:INFO:pycaret_globals: {'create_model_container', 'display_container', 'transform_target_method_param', 'fold_shuffle_param', 'fold_generator', 'y', '_gpu_n_jobs_param', '_ml_usecase', 'dashboard_logger', '_internal_pipeline', 'fix_imbalance_param', 'fold_groups_param', 'experiment__', 'logging_param', 'exp_name_log', 'fold_groups_param_full', 'transform_target_param', 'master_model_container', 'stratify_param', 'imputation_classifier', 'fold_param', 'seed', 'data_before_preprocess', 'n_jobs_param', '_all_metrics', 'gpu_param', 'X_test', 'USI', '_available_plots', 'prep_pipe', 'X', 'html_param', '_all_models_internal', 'imputation_regressor', 'y_train', 'iterative_imputation_iters_param', 'pycaret_globals', 'X_train', 'log_plots_param', 'target_param', 'y_test', 'fix_imbalance_method_param', '_all_models'}
+2023-01-08 11:52:30,655:INFO:Preparing display monitor
+2023-01-08 11:52:30,655:INFO:Preparing display monitor
+2023-01-08 11:52:30,670:INFO:Importing libraries
+2023-01-08 11:52:30,670:INFO:Copying data for preprocessing
+2023-01-08 11:52:30,692:INFO:Declaring preprocessing parameters
+2023-01-08 11:52:30,692:INFO:cuml==21.12.00a+116.g4ce5bd609
+2023-01-08 11:52:30,728:INFO:Creating preprocessing pipeline
+2023-01-08 11:52:31,016:INFO:Preprocessing pipeline created successfully
+2023-01-08 11:52:31,016:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2023-01-08 11:52:31,016:INFO:Creating global containers
+2023-01-08 11:52:31,017:INFO:Install wandb to use WandbLogger
+2023-01-08 11:52:31,018:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2023-01-08 11:52:37,057:INFO:Imported cuml.linear_model.LogisticRegression
+2023-01-08 11:52:39,096:INFO:Imported cuml.neighbors.KNeighborsClassifier
+2023-01-08 11:52:39,098:INFO:Imported cuml.MBSGDClassifier
+2023-01-08 11:52:39,099:INFO:Imported cuml.svm.SVC
+2023-01-08 11:52:39,127:INFO:Imported cuml.linear_model
+2023-01-08 11:52:39,132:INFO:Imported cuml.ensemble
+2023-01-08 11:53:35,186:INFO:PyCaret Supervised Module
+2023-01-08 11:53:35,186:INFO:ML Usecase: classification
+2023-01-08 11:53:35,187:INFO:version 2.3.8
+2023-01-08 11:53:35,187:INFO:Initializing setup()
+2023-01-08 11:53:35,187:INFO:setup(target=app_complete_flag, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.95, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=True, fold_groups=None, n_jobs=-1, use_gpu=True, custom_pipeline=None, html=True, session_id=42, log_experiment=True, experiment_name=Lead_scoring_model_experimentation, experiment_custom_tags=None, log_plots=['auc', 'confusion_matrix', 'feature'], log_profile=False, log_data=True, silent=True, verbose=True, profile=False, profile_kwargs=None, display=None)
+2023-01-08 11:53:35,187:INFO:Checking environment
+2023-01-08 11:53:35,187:INFO:python_version: 3.8.12
+2023-01-08 11:53:35,187:INFO:python_build: ('default', 'Oct 12 2021 21:59:51')
+2023-01-08 11:53:35,187:INFO:machine: x86_64
+2023-01-08 11:53:35,187:INFO:platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.10
+2023-01-08 11:53:35,187:INFO:Memory: svmem(total=270103662592, available=213734858752, percent=20.9, used=54559911936, free=71876243456, active=78839164928, inactive=92999368704, buffers=1299353600, cached=142368153600, shared=41091072, slab=11138383872)
+2023-01-08 11:53:35,191:INFO:Physical Core: 32
+2023-01-08 11:53:35,191:INFO:Logical Core: 64
+2023-01-08 11:53:35,191:INFO:Checking libraries
+2023-01-08 11:53:35,191:INFO:pd==1.4.3
+2023-01-08 11:53:35,191:INFO:numpy==1.22.2
+2023-01-08 11:53:35,191:INFO:sklearn==0.23.2
+2023-01-08 11:53:35,192:INFO:lightgbm==3.3.2
+2023-01-08 11:53:35,192:WARNING:catboost not found
+2023-01-08 11:53:35,215:INFO:xgboost==1.5.0
+2023-01-08 11:53:35,215:INFO:mlflow==1.26.1
+2023-01-08 11:53:35,215:INFO:Checking Exceptions
+2023-01-08 11:53:35,215:INFO:Declaring global variables
+2023-01-08 11:53:35,215:INFO:USI: 92c5
+2023-01-08 11:53:35,215:INFO:pycaret_globals: {'fold_param', 'X_train', 'n_jobs_param', '_gpu_n_jobs_param', 'seed', 'display_container', '_available_plots', '_all_metrics', 'experiment__', 'iterative_imputation_iters_param', 'gpu_param', 'imputation_classifier', 'fold_groups_param_full', 'dashboard_logger', 'transform_target_param', 'y_train', 'target_param', '_all_models_internal', '_all_models', 'log_plots_param', 'transform_target_method_param', 'y', 'master_model_container', 'fold_generator', 'USI', 'fix_imbalance_param', 'create_model_container', 'stratify_param', 'fix_imbalance_method_param', 'pycaret_globals', 'imputation_regressor', '_ml_usecase', 'exp_name_log', 'logging_param', '_internal_pipeline', 'fold_shuffle_param', 'X', 'X_test', 'html_param', 'y_test', 'data_before_preprocess', 'fold_groups_param', 'prep_pipe'}
+2023-01-08 11:53:35,215:INFO:Preparing display monitor
+2023-01-08 11:53:35,215:INFO:Preparing display monitor
+2023-01-08 11:53:35,231:INFO:Importing libraries
+2023-01-08 11:53:35,231:INFO:Copying data for preprocessing
+2023-01-08 11:53:35,252:INFO:Declaring preprocessing parameters
+2023-01-08 11:53:35,252:INFO:cuml==21.12.00a+116.g4ce5bd609
+2023-01-08 11:53:35,283:INFO:Creating preprocessing pipeline
+2023-01-08 11:53:35,534:INFO:Preprocessing pipeline created successfully
+2023-01-08 11:53:35,534:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2023-01-08 11:53:35,534:INFO:Creating global containers
+2023-01-08 11:53:35,535:INFO:Install wandb to use WandbLogger
+2023-01-08 11:53:35,535:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2023-01-08 11:53:41,160:INFO:Imported cuml.linear_model.LogisticRegression
+2023-01-08 11:53:42,964:INFO:Imported cuml.neighbors.KNeighborsClassifier
+2023-01-08 11:53:42,967:INFO:Imported cuml.MBSGDClassifier
+2023-01-08 11:53:42,968:INFO:Imported cuml.svm.SVC
+2023-01-08 11:53:42,994:INFO:Imported cuml.linear_model
+2023-01-08 11:53:42,999:INFO:Imported cuml.ensemble
+2023-01-08 11:55:34,109:INFO:PyCaret Supervised Module
+2023-01-08 11:55:34,110:INFO:ML Usecase: classification
+2023-01-08 11:55:34,110:INFO:version 2.3.8
+2023-01-08 11:55:34,110:INFO:Initializing setup()
+2023-01-08 11:55:34,110:INFO:setup(target=app_complete_flag, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.95, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=True, fold_groups=None, n_jobs=-1, use_gpu=True, custom_pipeline=None, html=True, session_id=42, log_experiment=True, experiment_name=Lead_scoring_model_experimentation, experiment_custom_tags=None, log_plots=['auc', 'confusion_matrix', 'feature'], log_profile=False, log_data=True, silent=True, verbose=True, profile=False, profile_kwargs=None, display=None)
+2023-01-08 11:55:34,110:INFO:Checking environment
+2023-01-08 11:55:34,110:INFO:python_version: 3.8.12
+2023-01-08 11:55:34,110:INFO:python_build: ('default', 'Oct 12 2021 21:59:51')
+2023-01-08 11:55:34,111:INFO:machine: x86_64
+2023-01-08 11:55:34,111:INFO:platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.10
+2023-01-08 11:55:34,111:INFO:Memory: svmem(total=270103662592, available=204468903936, percent=24.3, used=63810682880, free=62618124288, active=87973822464, inactive=92981383168, buffers=1298894848, cached=142375960576, shared=55791616, slab=11130032128)
+2023-01-08 11:55:34,114:INFO:Physical Core: 32
+2023-01-08 11:55:34,115:INFO:Logical Core: 64
+2023-01-08 11:55:34,115:INFO:Checking libraries
+2023-01-08 11:55:34,115:INFO:pd==1.4.3
+2023-01-08 11:55:34,115:INFO:numpy==1.22.2
+2023-01-08 11:55:34,115:INFO:sklearn==0.23.2
+2023-01-08 11:55:34,115:INFO:lightgbm==3.3.2
+2023-01-08 11:55:34,115:WARNING:catboost not found
+2023-01-08 11:55:34,139:INFO:xgboost==1.5.0
+2023-01-08 11:55:34,139:INFO:mlflow==1.26.1
+2023-01-08 11:55:34,139:INFO:Checking Exceptions
+2023-01-08 11:55:34,139:INFO:Declaring global variables
+2023-01-08 11:55:34,139:INFO:USI: a13f
+2023-01-08 11:55:34,139:INFO:pycaret_globals: {'transform_target_param', '_all_metrics', 'transform_target_method_param', '_available_plots', 'dashboard_logger', '_internal_pipeline', 'stratify_param', 'X_train', 'data_before_preprocess', 'display_container', 'gpu_param', 'fix_imbalance_param', 'imputation_regressor', 'experiment__', '_gpu_n_jobs_param', '_all_models', 'fold_generator', 'USI', 'fold_groups_param', 'y_test', 'pycaret_globals', 'master_model_container', 'exp_name_log', '_ml_usecase', 'target_param', 'fix_imbalance_method_param', 'fold_param', 'html_param', 'y', 'create_model_container', 'prep_pipe', 'seed', 'n_jobs_param', 'fold_groups_param_full', 'y_train', 'X', 'X_test', '_all_models_internal', 'log_plots_param', 'iterative_imputation_iters_param', 'logging_param', 'imputation_classifier', 'fold_shuffle_param'}
+2023-01-08 11:55:34,140:INFO:Preparing display monitor
+2023-01-08 11:55:34,140:INFO:Preparing display monitor
+2023-01-08 11:55:34,156:INFO:Importing libraries
+2023-01-08 11:55:34,156:INFO:Copying data for preprocessing
+2023-01-08 11:55:34,180:INFO:Declaring preprocessing parameters
+2023-01-08 11:55:34,180:INFO:cuml==21.12.00a+116.g4ce5bd609
+2023-01-08 11:55:34,212:INFO:Creating preprocessing pipeline
+2023-01-08 11:55:34,477:INFO:Preprocessing pipeline created successfully
+2023-01-08 11:55:34,477:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2023-01-08 11:55:34,477:INFO:Creating global containers
+2023-01-08 11:55:34,478:INFO:Install wandb to use WandbLogger
+2023-01-08 11:55:34,478:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2023-01-08 11:55:40,294:INFO:Imported cuml.linear_model.LogisticRegression
+2023-01-08 11:55:42,105:INFO:Imported cuml.neighbors.KNeighborsClassifier
+2023-01-08 11:55:42,110:INFO:Imported cuml.MBSGDClassifier
+2023-01-08 11:55:42,112:INFO:Imported cuml.svm.SVC
+2023-01-08 11:55:42,153:INFO:Imported cuml.linear_model
+2023-01-08 11:55:42,160:INFO:Imported cuml.ensemble

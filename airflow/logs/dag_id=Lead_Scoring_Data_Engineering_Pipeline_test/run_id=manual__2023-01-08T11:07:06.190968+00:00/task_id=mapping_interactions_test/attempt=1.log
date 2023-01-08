@@ -1,0 +1,32 @@
+[2023-01-08 11:07:14,313] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_interactions_test manual__2023-01-08T11:07:06.190968+00:00 [queued]>
+[2023-01-08 11:07:14,317] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_interactions_test manual__2023-01-08T11:07:06.190968+00:00 [queued]>
+[2023-01-08 11:07:14,317] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 11:07:14,318] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-01-08 11:07:14,318] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 11:07:14,329] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): mapping_interactions_test> on 2023-01-08 11:07:06.190968+00:00
+[2023-01-08 11:07:14,332] {standard_task_runner.py:52} INFO - Started process 19646 to run task
+[2023-01-08 11:07:14,339] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline_test', 'mapping_interactions_test', 'manual__2023-01-08T11:07:06.190968+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py', '--cfg-path', '/tmp/tmpoz0ady91', '--error-file', '/tmp/tmphc_3ody6']
+[2023-01-08 11:07:14,340] {standard_task_runner.py:80} INFO - Job 100: Subtask mapping_interactions_test
+[2023-01-08 11:07:14,385] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.mapping_interactions_test manual__2023-01-08T11:07:06.190968+00:00 [running]> on host 1f037b111ba5
+[2023-01-08 11:07:14,431] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline_test
+AIRFLOW_CTX_TASK_ID=mapping_interactions_test
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-08T11:07:06.190968+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-08T11:07:06.190968+00:00
+[2023-01-08 11:07:14,502] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/test_with_pytest.py", line 107, in test_interactions_mapping
+    assert df.equals(df_test)
+AssertionError
+[2023-01-08 11:07:14,506] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_Scoring_Data_Engineering_Pipeline_test, task_id=mapping_interactions_test, execution_date=20230108T110706, start_date=20230108T110714, end_date=20230108T110714
+[2023-01-08 11:07:14,515] {standard_task_runner.py:92} ERROR - Failed to execute job 100 for task mapping_interactions_test (; 19646)
+[2023-01-08 11:07:14,546] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-01-08 11:07:14,569] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

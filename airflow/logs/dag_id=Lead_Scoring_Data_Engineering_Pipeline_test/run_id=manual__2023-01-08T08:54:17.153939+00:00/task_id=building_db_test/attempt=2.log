@@ -1,0 +1,32 @@
+[2023-01-08 08:54:28,104] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:54:17.153939+00:00 [queued]>
+[2023-01-08 08:54:28,109] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:54:17.153939+00:00 [queued]>
+[2023-01-08 08:54:28,109] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:54:28,109] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2023-01-08 08:54:28,109] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:54:28,121] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): building_db_test> on 2023-01-08 08:54:17.153939+00:00
+[2023-01-08 08:54:28,125] {standard_task_runner.py:52} INFO - Started process 3986 to run task
+[2023-01-08 08:54:28,130] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline_test', 'building_db_test', 'manual__2023-01-08T08:54:17.153939+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/unit_test/.ipynb_checkpoints/lead_scoring_data_pipeline_test-checkpoint.py', '--cfg-path', '/tmp/tmp_kjtedjp', '--error-file', '/tmp/tmpqrqybbvs']
+[2023-01-08 08:54:28,131] {standard_task_runner.py:80} INFO - Job 44: Subtask building_db_test
+[2023-01-08 08:54:28,175] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline_test.building_db_test manual__2023-01-08T08:54:17.153939+00:00 [running]> on host 1f037b111ba5
+[2023-01-08 08:54:28,215] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline_test
+AIRFLOW_CTX_TASK_ID=building_db_test
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-08T08:54:17.153939+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-08T08:54:17.153939+00:00
+[2023-01-08 08:54:28,578] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/dags/Lead_scoring_data_pipeline/unit_test/test_with_pytest.py", line 28, in test_load_data_into_db
+    print("df.shape[0] :" + df.shape[0])
+TypeError: can only concatenate str (not "int") to str
+[2023-01-08 08:54:28,582] {taskinstance.py:1415} INFO - Marking task as FAILED. dag_id=Lead_Scoring_Data_Engineering_Pipeline_test, task_id=building_db_test, execution_date=20230108T085417, start_date=20230108T085428, end_date=20230108T085428
+[2023-01-08 08:54:28,591] {standard_task_runner.py:92} ERROR - Failed to execute job 44 for task building_db_test (can only concatenate str (not "int") to str; 3986)
+[2023-01-08 08:54:28,621] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-01-08 08:54:28,653] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

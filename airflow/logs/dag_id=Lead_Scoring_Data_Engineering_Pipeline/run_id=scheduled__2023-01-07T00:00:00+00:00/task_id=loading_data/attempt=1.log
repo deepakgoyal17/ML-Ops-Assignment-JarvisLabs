@@ -1,0 +1,23 @@
+[2023-01-08 08:30:35,339] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.loading_data scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-08 08:30:35,344] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.loading_data scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-08 08:30:35,344] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:30:35,344] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-01-08 08:30:35,344] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-08 08:30:35,356] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): loading_data> on 2023-01-07 00:00:00+00:00
+[2023-01-08 08:30:35,359] {standard_task_runner.py:52} INFO - Started process 1313 to run task
+[2023-01-08 08:30:35,364] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline', 'loading_data', 'scheduled__2023-01-07T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/lead_scoring_data_pipeline.py', '--cfg-path', '/tmp/tmp7entmki6', '--error-file', '/tmp/tmpw7px5wnb']
+[2023-01-08 08:30:35,365] {standard_task_runner.py:80} INFO - Job 25: Subtask loading_data
+[2023-01-08 08:30:35,412] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.loading_data scheduled__2023-01-07T00:00:00+00:00 [running]> on host 1f037b111ba5
+[2023-01-08 08:30:35,463] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline
+AIRFLOW_CTX_TASK_ID=loading_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-07T00:00:00+00:00
+[2023-01-08 08:30:36,056] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-08 08:30:36,062] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_Scoring_Data_Engineering_Pipeline, task_id=loading_data, execution_date=20230107T000000, start_date=20230108T083035, end_date=20230108T083036
+[2023-01-08 08:30:36,096] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-08 08:30:36,125] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

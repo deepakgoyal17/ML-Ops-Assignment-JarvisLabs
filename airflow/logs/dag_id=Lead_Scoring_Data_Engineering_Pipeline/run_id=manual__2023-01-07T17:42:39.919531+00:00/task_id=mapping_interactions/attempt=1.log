@@ -1,0 +1,23 @@
+[2023-01-07 17:43:14,295] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.mapping_interactions manual__2023-01-07T17:42:39.919531+00:00 [queued]>
+[2023-01-07 17:43:14,301] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.mapping_interactions manual__2023-01-07T17:42:39.919531+00:00 [queued]>
+[2023-01-07 17:43:14,301] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-07 17:43:14,301] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-01-07 17:43:14,301] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-07 17:43:14,311] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): mapping_interactions> on 2023-01-07 17:42:39.919531+00:00
+[2023-01-07 17:43:14,315] {standard_task_runner.py:52} INFO - Started process 1684 to run task
+[2023-01-07 17:43:14,320] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_Scoring_Data_Engineering_Pipeline', 'mapping_interactions', 'manual__2023-01-07T17:42:39.919531+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/Lead_scoring_data_pipeline/lead_scoring_data_pipeline.py', '--cfg-path', '/tmp/tmpi75nj_uk', '--error-file', '/tmp/tmp_u2t1fo2']
+[2023-01-07 17:43:14,322] {standard_task_runner.py:80} INFO - Job 13: Subtask mapping_interactions
+[2023-01-07 17:43:14,357] {task_command.py:371} INFO - Running <TaskInstance: Lead_Scoring_Data_Engineering_Pipeline.mapping_interactions manual__2023-01-07T17:42:39.919531+00:00 [running]> on host 53a4c6599d84
+[2023-01-07 17:43:14,396] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_Scoring_Data_Engineering_Pipeline
+AIRFLOW_CTX_TASK_ID=mapping_interactions
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-07T17:42:39.919531+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-07T17:42:39.919531+00:00
+[2023-01-07 17:43:16,826] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-07 17:43:16,832] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_Scoring_Data_Engineering_Pipeline, task_id=mapping_interactions, execution_date=20230107T174239, start_date=20230107T174314, end_date=20230107T174316
+[2023-01-07 17:43:16,860] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-07 17:43:16,898] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
